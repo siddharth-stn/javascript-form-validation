@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>JavaScript Form Validation </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="success hidden">
+            <span>Form Submitted Successfully!</span>
+        </div>
+        <form action="" class="form-container">
+            <h1>Enter your Details</h1>
+            <div class="email-div">
+                <input class="email" type="email" name="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="country-div">
+                <input type="text" class="country" name="country" placeholder="Enter your Country" required>
+            </div>
+            <div class="zip-div">
+                <input type="text" class="zip" name="zip" placeholder="Enter your Zip Code" pattern="[0-9]{6}" required>
+            </div>
+            <div class="password-div">
+                <input type="password" class="password" name="password" placeholder="Enter a secure Password"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required>
+            </div>
+            <div class="confirm-password-div">
+                <input type="password" class="confirm-password" name="password" placeholder="Confirm Password" required>
+            </div>
+            <div class="button-div">
+                <button type="button">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
